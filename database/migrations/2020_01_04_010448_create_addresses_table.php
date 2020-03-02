@@ -19,7 +19,6 @@ class CreateAddressesTable extends Migration
             $table->string('street');
             $table->string('number')->nullable();
             $table->string('apartment')->nullable();
-            $table->integer('person_id');
             $table->timestamps();
         });
     }
