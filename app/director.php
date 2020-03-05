@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class director extends Model
+class Director extends Model
 {
-    //
+    protected $guarded = [];
 }
