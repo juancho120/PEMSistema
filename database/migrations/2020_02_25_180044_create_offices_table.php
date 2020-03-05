@@ -16,6 +16,7 @@ class CreateOfficesTable extends Migration
         Schema::create('offices', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->char('name');
+            $table->integer('address_id');
             $table->timestamps();
         });
     }

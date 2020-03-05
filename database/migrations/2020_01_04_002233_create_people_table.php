@@ -20,6 +20,10 @@ class CreatePeopleTable extends Migration
             $table->string('lastname');
             $table->date('birth');
             $table->integer('study_id');
+            $table->integer('workhour_id');
+            $table->integer('decree_id');
+            $table->integer('office_id');
+            $table->integer('director_id');
             $table->timestamps();
         });
     }

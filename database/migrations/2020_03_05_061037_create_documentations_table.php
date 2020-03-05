@@ -18,6 +18,7 @@ class CreateDocumentationsTable extends Migration
             $table->boolean('fdni');
             $table->boolean('cnegativa');
             $table->boolean('fdecreto');
+            $table->integer('person_id');
             $table->timestamps();
         });
     }

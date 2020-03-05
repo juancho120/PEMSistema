@@ -9,7 +9,7 @@ class Address extends Model
     protected $guarded = [];
 
     public function office(){
-        return $this->belongsTo('App\office');
+        return $this->hasOne('App\office');
     }
     
 }
