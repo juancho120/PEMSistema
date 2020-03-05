@@ -15,9 +15,9 @@ class CreateDocumentationsTable extends Migration
     {
         Schema::create('documentations', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bolean('fdni');
-            $table->bolean('cnegativa');
-            $table->bolean('fdecreto');
+            $table->boolean('fdni');
+            $table->boolean('cnegativa');
+            $table->boolean('fdecreto');
             $table->timestamps();
         });
     }
