@@ -27,11 +27,11 @@ class PersonController extends Controller
     public function create()
     {
         return view('models.people.create');
-/*         $person = new Person;
-        $studies = Study::all();
+        /* $person = new Person; */
+        /* $studies = Study::all();
 
         return view('models.people.create')->with('person',$person)
-                                           ->with('studies', $studies); */
+                                           ->with('studies', $studies);  */
     }
 
     /**
