@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateContacsTable extends Migration
+class CreateDocumentationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,11 @@ class CreateContacsTable extends Migration
      */
     public function up()
     {
-        Schema::create('contacs', function (Blueprint $table) {
+        Schema::create('documentations', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->bolean('fdni');
+            $table->bolean('cnegativa');
+            $table->bolean('fdecreto');
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateContacsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('contacts');
+        Schema::dropIfExists('documentations');
     }
 }

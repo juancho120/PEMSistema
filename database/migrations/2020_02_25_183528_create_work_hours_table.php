@@ -15,6 +15,7 @@ class CreateWorkHoursTable extends Migration
     {
         Schema::create('work_hours', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('hours');
             $table->timestamps();
         });
     }

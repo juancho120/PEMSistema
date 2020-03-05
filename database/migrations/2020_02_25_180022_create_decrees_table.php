@@ -15,6 +15,8 @@ class CreateDecreesTable extends Migration
     {
         Schema::create('decrees', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('number');
+            $table->date('date');
             $table->timestamps();
         });
     }

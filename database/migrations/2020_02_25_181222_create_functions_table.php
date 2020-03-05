@@ -15,6 +15,7 @@ class CreateFunctionsTable extends Migration
     {
         Schema::create('contacts', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('type');
             $table->timestamps();
         });
     }
